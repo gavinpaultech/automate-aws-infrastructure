@@ -39,24 +39,21 @@ Ensure you have the following:
 
 ## 📝 Setup Instructions
 
-1) Clone this repository:
 
-```bash
-git clone https://github.com/yourusername/aws-ec2-nginx-docker.git
-cd aws-ec2-nginx-docker
 ```
-2) Initialize Terraform:
+1) Initialize Terraform:
 ```terraform
 terraform init
 ```
 
-3) Review the execution plan:
+2) Review the execution plan:
 
 ```
 terraform plan
 ```
+![Plan](imgs/terraform_plan.png)
 
-4) Apply the configuration to provision the infrastructure:
+3) Apply the configuration to provision the infrastructure:
 ```
 terraform apply
 
@@ -66,7 +63,12 @@ terraform apply --auto-approve
 ```
 Confirm with yes when prompted.
 
-5) After deployment, Terraform will output the public IP of the EC2 instance. Access the Nginx server by navigating to http://<EC2_PUBLIC_IP> in your web browser.
+![Approve](imgs/terraform_apply.png)
+
+4) After deployment, Terraform will output the public IP of the EC2 instance. Access the Nginx server by navigating to http://<EC2_PUBLIC_IP> in your web browser.
+
+
+
 
 ## 🔧 Customization
 
